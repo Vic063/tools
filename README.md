@@ -1,4 +1,4 @@
-#INTRODUCTION
+# INTRODUCTION
 
 Cisco Business Dashboard uses a Java VM to run its code.
 The reverse engineering process of the passwords management component shows the following working scheme:
@@ -10,7 +10,7 @@ The reverse engineering process of the passwords management component shows the 
 5) An AES-128-CBC decryption is performed to obtain the original data
 
 
-#COMPILE
+# COMPILE
 
 The code was tested using Debian Buster.
 List of prerequisites:
@@ -21,6 +21,6 @@ In order to compile the code, invoke the following command:
     gcc decrypt_cbd_password.c -o decrypt_cbd_password -ltomcrypt
 
 
-#USAGE
+# USAGE
 
 Simply run the compiled program and issue the base64 encoded string (as shown in the JSON configuration of the device inside the CBD).
